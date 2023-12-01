@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Практика 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="styles/form.css" rel="stylesheet"/>
+        <link rel="icon" type="image/x-icon" href="images/favicon2.ico">
+    </head>
+    <body>
+        <audio src="media/file_example.mp3" controls=""></audio>
+        <form action="action.php" method="get">
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <input type="text" name="username" id="username" placeholder="Ваш логин" required="">
+                <label for="username">Введите Ваше имя:</label>
+                <br>
+                <label for="email">Введите Ваш email:</label>
+                <input type="email" name="email" id="email" placeholder="email@mail.ru">
+                <br>
+                <label for="tel">Введите номер телефона:</label>
+                <input type="tel" name="tel" id="tel" placeholder="8-nnn-nnn-nnnn" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br>
+                <!--label for="age">Введите Ваш возраст:</label>
+                <input type="number" name="age" id="age" min="18" max="99" maxlength="3" size="10">
+                <br-->
+                <label for="bd">Введите Вашe дату рождения:</label>
+                <input type="date" name="bd" id="bd" >
+                <br>
+                <label for="ava">Загрузите вашу аватарку:</label>
+                <input type="file" name="ava" id="ava" accept=".png" >
+            </fieldset>
+            <fieldset class="inline">
+                <legend>Дополнительная информация</legend>
+                <div>Выберите ваш пол:</div>
+                <label for="genderm">Мужской</label>
+                <input type="radio" name="gender" id="genderm" value="m">
+                <label for="genderw">Женский</label>
+                <input type="radio" name="gender" id="genderw" value="w">
+                <br>
+                <div>Ваша любимая еда:</div>
+                <label for="salat">Салат</label>
+                <input type="checkbox" name="eat" id="salat" value="s">
+                <label for="moloko">Молоко</label>
+                <input type="checkbox" name="eat" id="moloko" value="m" checked="">
+                <label for="burger">Бургер</label>
+                <input type="checkbox" name="eat" id="burger" value="b">
+            </fieldset>
+            <fieldset>
+                <legend>Профессиональные навыки</legend>
+                <label for="navik">О себе</label>
+                <textarea name="navik" id="navik" rows="3"></textarea>
+                <br>
+                <label for="navik">О себе</label>
+                <select name="skils" multiple="" size="5">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                    <option value="react">REACT</option>
+                </select>
+            </fieldset>
+            <button name="submit" type="submit">Отправить</button>
+            <button name="reset" type="reset">Очистить</button>
+            
+        </form>
+    </body>
+</html>
