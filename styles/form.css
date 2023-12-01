@@ -1,0 +1,13 @@
+/* 
+    Created on : 1 дек. 2023 г., 19:25:26
+    Author     : root
+*/
+
+label{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+.inline label{
+    display: unset;
+}
